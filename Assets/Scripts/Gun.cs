@@ -1,7 +1,7 @@
 ﻿using System.Collections;
 using UnityEngine;
 
-public class Gun : Item {
+public abstract class Gun : Item {
 
 	public float FireRate;
 	public Transform SpawnPoint;
@@ -15,15 +15,17 @@ public class Gun : Item {
 		isReady = true;
 	}
 
+	protected abstract void OnFire();
+
 	public override void Use() {
 		if (isReady) {
-			StartCoroutine(fire());
+			StartCoroutine(fireAndWait());
 		}
 	}
 
-	private IEnumerator fire() {
+	private IEnumerator fireAndWait() {
 		isReady = false;
-		FiringPattern.Fire(ProjectilePrefab, SpawnPoint, ProjectileUpdate);
+		OnFire();
 		yield return new WaitForSeconds(FireRate);
 		isReady = true;
 	}
