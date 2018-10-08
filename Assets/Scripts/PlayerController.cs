@@ -10,14 +10,14 @@ public class PlayerController : MonoBehaviour
 	public Item FireSlot;
 	private Animator anim;
 	private Rigidbody2D rb;
-	private Movement movementType;
+	private Movement movement;
 	private Vector2 movementInput;
 	private Vector2 mouseVec;
 	private float mouseAngle;
 	private bool isFiring;
 
 	private void Awake() {
-		movementType = GetComponent<Movement>();
+		movement = GetComponent<Movement>();
 		rb = GetComponent<Rigidbody2D>();
 		anim = GetComponent<Animator>();
 	}
@@ -29,7 +29,7 @@ public class PlayerController : MonoBehaviour
 	}
 
 	private void FixedUpdate() {
-		movementType.Move(rb, movementInput);
+		movement.Move(movementInput);
 	
 		if (isFiring && FireSlot != null) {
 			FireSlot.TryUse();
