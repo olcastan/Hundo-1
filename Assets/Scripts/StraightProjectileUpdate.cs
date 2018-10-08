@@ -6,12 +6,6 @@ public class StraightProjectileUpdate : ProjectileUpdate {
 	public float Speed;
 
 	public override void OnFixedUpdate(Projectile projectile) {
-		projectile.rb.velocity = projectile.transform.right * Speed;
-	}
-
-	public override ProjectileUpdate Clone() {
-		var retVal = CreateInstance<StraightProjectileUpdate>();
-		retVal.Speed = Speed;
-		return retVal;
+		projectile.rb2d.velocity = projectile.transform.right * Speed;
 	}
 }

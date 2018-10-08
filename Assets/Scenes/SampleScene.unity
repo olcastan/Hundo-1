@@ -168,7 +168,13 @@ Prefab:
       propertyPath: Cooldown
       value: 0.18
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    - target: {fileID: 114515337619472886, guid: c77e71d0789174748a324f6b3a566a2a,
+        type: 2}
+      propertyPath: FireRate
+      value: 1.88
+      objectReference: {fileID: 0}
+    m_RemovedComponents:
+    - {fileID: 114515337619472886, guid: c77e71d0789174748a324f6b3a566a2a, type: 2}
   m_SourcePrefab: {fileID: 100100000, guid: c77e71d0789174748a324f6b3a566a2a, type: 2}
   m_IsPrefabAsset: 0
 --- !u!1 &519420028
@@ -411,7 +417,7 @@ Prefab:
         type: 2}
       propertyPath: FireSlot
       value: 
-      objectReference: {fileID: 1681265825}
+      objectReference: {fileID: 1852176057}
     - target: {fileID: 114060446580551372, guid: 429222b9f1312c744bb4278000921880,
         type: 2}
       propertyPath: Camera
@@ -9901,12 +9907,28 @@ Prefab:
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: a9ec3f9f6ee1ceb4f93a1552b9598143, type: 2}
   m_IsPrefabAsset: 0
---- !u!114 &1681265825 stripped
-MonoBehaviour:
-  m_CorrespondingSourceObject: {fileID: 114515337619472886, guid: c77e71d0789174748a324f6b3a566a2a,
+--- !u!1 &1852176055 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 1514547390522242, guid: c77e71d0789174748a324f6b3a566a2a,
     type: 2}
   m_PrefabInternal: {fileID: 382877593}
-  m_Script: {fileID: 11500000, guid: 034517ac6de153a47af9a4e972536ba1, type: 3}
+--- !u!114 &1852176057
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1852176055}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 50396272d2070e64c915a479309ed6d1, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  FireRate: 3.21
+  SpawnPoint: {fileID: 611043028}
+  ProjectilePrefab: {fileID: 114284336167332928, guid: 1b8f3683b58ff2c46b6daef6ed1354d9,
+    type: 2}
+  FiringPattern: {fileID: 11400000, guid: 049159e32f055bf43981bbaa62c1c7c2, type: 2}
+  ProjectileUpdate: {fileID: 11400000, guid: 028dfdc5b2b0f8148a689be8a440afb7, type: 2}
 --- !u!4 &1907897686 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 4668814507879222, guid: 429222b9f1312c744bb4278000921880,

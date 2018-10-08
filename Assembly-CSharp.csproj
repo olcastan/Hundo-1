@@ -53,18 +53,17 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
-     <Compile Include="Assets\Scripts\Base\Damageable.cs" />
-     <Compile Include="Assets\Scripts\Base\Item.cs" />
-     <Compile Include="Assets\Scripts\Base\Movement.cs" />
      <Compile Include="Assets\Scripts\Bullet.cs" />
      <Compile Include="Assets\Scripts\CameraFollow.cs" />
+     <Compile Include="Assets\Scripts\Damageable.cs" />
      <Compile Include="Assets\Scripts\EnemyHealth.cs" />
-     <Compile Include="Assets\Scripts\FiringPattern.cs" />
      <Compile Include="Assets\Scripts\Follow.cs" />
      <Compile Include="Assets\Scripts\Gun.cs" />
      <Compile Include="Assets\Scripts\Inventory.cs" />
+     <Compile Include="Assets\Scripts\Item.cs" />
      <Compile Include="Assets\Scripts\MainMenu.cs" />
      <Compile Include="Assets\Scripts\MeleeWeapon.cs" />
+     <Compile Include="Assets\Scripts\Movement.cs" />
      <Compile Include="Assets\Scripts\Pistol.cs" />
      <Compile Include="Assets\Scripts\PlayerController.cs" />
      <Compile Include="Assets\Scripts\PlayerHealth.cs" />
@@ -73,7 +72,6 @@
      <Compile Include="Assets\Scripts\RotateFromMouse.cs" />
      <Compile Include="Assets\Scripts\SimpleFollow.cs" />
      <Compile Include="Assets\Scripts\SimpleMovement.cs" />
-     <Compile Include="Assets\Scripts\SingleFiringPattern.cs" />
      <Compile Include="Assets\Scripts\StraightProjectileUpdate.cs" />
      <Compile Include="Assets\Scripts\Timer.cs" />
      <Compile Include="Assets\Scripts\TimerManager.cs" />

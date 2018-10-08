@@ -13,7 +13,7 @@ public class WarningTimer : Timer {
     */
 
     protected override void OnEnd() {        
-        Debug.Log("Timer ended, ran for " + time + " seconds");
+//        Debug.Log("Timer ended, ran for " + time + " seconds");
     }
 
     public override void Update() {
@@ -27,7 +27,7 @@ public class WarningTimer : Timer {
             curTime -= Time.deltaTime;
         }
 
-        Debug.Log(curTime);
+ //       Debug.Log(curTime);
     }
 
     /*

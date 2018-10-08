@@ -6,13 +6,16 @@ public abstract class Gun : Item {
 	public float FireRate;
 	public Transform SpawnPoint;
 	public Projectile ProjectilePrefab; // Has events for on collide
-	public FiringPattern FiringPattern;
 	public ProjectileUpdate ProjectileUpdate;
 
 	private bool isReady;
 
 	public Gun() {
 		isReady = true;
+	}
+	
+	private void Awake() {
+		ProjectilePrefab.ProjectileUpdate = ProjectileUpdate;
 	}
 
 	protected abstract void OnFire();

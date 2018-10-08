@@ -4,11 +4,12 @@
 [RequireComponent (typeof(BoxCollider2D))]
 public abstract class Projectile : MonoBehaviour {
 
+	public Vector2 Direction;
 	public ProjectileUpdate ProjectileUpdate;
-	public Rigidbody2D rb { get; set; }
+	public Rigidbody2D rb2d { get; private set; }
 
 	private void Awake() {
-		rb = GetComponent<Rigidbody2D>();
+		rb2d = GetComponent<Rigidbody2D>();
 	}
 
 	protected abstract void OnHit(Damageable damageable);
