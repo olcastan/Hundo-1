@@ -1,0 +1,12 @@
+# Hidden directories
+.*/
+
+# Temp/swap/auto-save files
+*~
+
+
+# Build files
+obj/
+
+# Libraries (these are auto-imported by Unity?)
+Library/
