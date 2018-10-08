@@ -99,7 +99,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: bfaea37a7694bca48a9ebdbc20f63d69, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  ProjectileUpdate: {fileID: 11400000, guid: 028dfdc5b2b0f8148a689be8a440afb7, type: 2}
+  Direction: {x: 0.8512188, y: -0.5248109}
+  ProjectileUpdate: {fileID: 11400000, guid: f85c6e023356e8e479dd5409e843d2d5, type: 2}
   DamageValue: 18
 --- !u!212 &212803838670660300
 SpriteRenderer:

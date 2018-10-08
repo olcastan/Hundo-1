@@ -11,4 +11,4 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9233b6d14dff4f14282d1594b14fd188, type: 3}
   m_Name: PistolProjectileUpdate
   m_EditorClassIdentifier: 
-  Speed: 0
+  Speed: 7.08
