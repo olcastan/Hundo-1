@@ -4,9 +4,5 @@
 # Temp/swap/auto-save files
 *~
 
-
-# Build files
+# Build stuff
 obj/
-
-# Libraries (these are auto-imported by Unity?)
-Library/
